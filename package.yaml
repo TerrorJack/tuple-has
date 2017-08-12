@@ -1,0 +1,29 @@
+name: tuple-has
+version: 0.0.1
+category: Data
+synopsis: Bare-bones extensible product, aka tuples.
+stability: alpha
+maintainer: Shao Cheng <astrohavoc@gmail.com>
+copyright: (c) 2017 Shao Cheng
+license: BSD3
+github: TerrorJack/tuple-has
+
+extra-source-files:
+  - LICENSE
+  - README.md
+  - CHANGELOG.md
+
+ghc-options: -Wall
+
+other-extensions:
+  - FlexibleInstances
+  - MultiParamTypeClasses
+  - TemplateHaskell
+
+dependencies:
+  - base >= 4.9 && < 5
+  - template-haskell
+
+library:
+  source-dirs: src
+  other-modules: Data.Tuple.Has.Internal
